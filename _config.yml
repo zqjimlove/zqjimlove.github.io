@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Inwoo
+subtitle: In new world,Open occasion
 description:
-author: John Doe
-language:
-timezone:
+author: Jim Woo
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://inwoo.me
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year:month/:title.html
 permalink_defaults:
 
 # Directory
@@ -46,7 +46,13 @@ highlight:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  Joke: joke
+  Tech: hack
+  Internet: net
 tag_map:
+  JavaScript: js
+  Css: css
+  NodeJS: node
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -65,7 +71,35 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next 
 
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+- type: git
+  repo: git@github.com:zqjimlove/zqjimlove.github.io.git
+  branch: master
+  message: Site updated:{{ now('YYYY-MM-DD HH:mm:ss') }})
+- type: rsync
+  host: inwoo.me
+  user: root
+  root: /home/blog
+  port: 22
+  delete: true
+  verbose: true
+
+# Search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+# Custom
+avatar: /uploads/avatar.jpg
+google_analytics: UA-39715938-1
+
+
+cdn:
+  enable: true
+  base: //inhu.qiniudn.com
+  tags:
