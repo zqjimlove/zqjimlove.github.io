@@ -23,11 +23,11 @@ permalink: blog-with-hexo-and-publish-hexo-cdnify
 hexo 的安装相当简单，一切都是基于`npm install`实现安装，如果本身对NodeJS熟识的话基本无需多费神。第一步是需要安装`hexo-cli`，然后创建项目再初始化即可完成。
 
 ```sh
-`npm install hexo-cli -g
+npm install hexo-cli -g
 hexo init blog
 cd blog
 ```
-`
+
 > 其实在初始化的时候已经一同进行了`npm install`，所以官方教程中的这一步可以忽略。
 
 ## 部署
@@ -66,19 +66,19 @@ cd blog
 `npm install hexo-cdnify --save`，安装完之后修改 hexo 的配置文件，添加如下配置：
 
 ```yaml
-`cdn:
+cdn:
   enable: true
   base: //cdn.com
   tags:
 'img[data-orign]()':  data-orign
 ```
-`
+
 `base` CDN的域名或者镜像链接。
 
 `tags` 需要替换的标签和元素的Map对象。`'img[data-orign]':  data-orign`即：寻找含`data-orign`属性的`img`标签，并且替换其`data-orign`属性的地址为CDN。`tags`默认已支持下列元素和属性：
 
 ```html
-`\<img data-src="____"\>
+\<img data-src="____"\>
 \<img src="____"\>
 \<link rel="apple-touch-icon" href="____"\>
 \<link rel="icon" href="____"\>
@@ -87,7 +87,7 @@ cd blog
 \<script src="____"\>\</script\>
 \<source src="____"\>\</source\>
 ```
-`
+
 ### 发布
 
 由于在生成静态文件之前不需要替换CDN，所以只有在`hexo g`活着`hexo d -g`时候才会进行替换，而`hexo s` 或`hexo server` 都是会忽略掉的。
