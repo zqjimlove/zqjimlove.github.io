@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://inwoo.me
 root: /
-permalink: :year:month/:title.html
+permalink: :category/:title.html
 permalink_defaults:
 
 # Directory
