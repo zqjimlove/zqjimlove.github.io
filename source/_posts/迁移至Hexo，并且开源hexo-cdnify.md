@@ -77,14 +77,14 @@ cdn:
 `tags` 需要替换的标签和元素的Map对象。`'img[data-orign]':  data-orign`即：寻找含`data-orign`属性的`img`标签，并且替换其`data-orign`属性的地址为CDN。`tags`默认已支持下列元素和属性：
 
 ```html
-<img data-src="____"\>
-<img src="____"\>
-<link rel="apple-touch-icon" href="____"\>
-<link rel="icon" href="____"\>
-<link rel="shortcut icon" href="____"\>
-<link rel="stylesheet" href="____"\>
-<script src="____"\>\</script\>
-<source src="____"\>\</source\>
+<img data-src="____" />
+<img src="____" />
+<link rel="apple-touch-icon" href="____" />
+<link rel="icon" href="____" />
+<link rel="shortcut icon" href="____" />
+<link rel="stylesheet" href="____" />
+<script src="____"\></script>
+<source src="____"\></source>
 ```
 
 ### 发布
