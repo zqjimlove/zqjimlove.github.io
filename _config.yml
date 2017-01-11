@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Inwoo
-subtitle: In new world,Open occasion
+title: woo's blog
+subtitle: 写一行代码，积一段人生
 description:
 author: Jim Woo
 language: zh-Hans
@@ -100,6 +100,6 @@ google_analytics: UA-39715938-1
 
 
 cdn:
-  enable: true
-  base: //inhu.qiniudn.com
+  enable: false
+  base: //i.inwoo.me
   tags:
