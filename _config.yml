@@ -79,13 +79,10 @@ deploy:
   repo: git@github.com:zqjimlove/zqjimlove.github.io.git
   branch: master
   message: Site updated:{{ now('YYYY-MM-DD HH:mm:ss') }})
-- type: rsync
-  host: inwoo.me
-  user: root
-  root: /home/blog
-  port: 22
-  delete: true
-  verbose: true
+- type: git
+  repo: git@git.coding.net:jimwoo/blog.git
+  branch: coding-pages
+  message: Site updated:{{ now('YYYY-MM-DD HH:mm:ss') }})
 
 # Search
 search:
@@ -100,7 +97,7 @@ google_analytics: UA-39715938-1
 
 
 cdn:
-  enable: true
+  enable: false
   base: //i.inwoo.me
   tags:
 
