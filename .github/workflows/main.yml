@@ -40,4 +40,5 @@ jobs:
         run: |
           hexo clean
           hexo g --config _config.yml,_config.production.yml -d
+          echo $HEXO_ALGOLIA_INDEXING_KEY
           hexo algolia
