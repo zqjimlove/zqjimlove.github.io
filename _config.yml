@@ -107,7 +107,7 @@ css_minifier:
   enable: true
 
 js_minifier:
-  enable: true
+  enable: false
 
 image_minifier:
   enable: true
