@@ -74,15 +74,15 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-- type: git
-  repo: git@github.com:zqjimlove/zqjimlove.github.io.git
-  branch: master
-  message: Site updated:{{ now('YYYY-MM-DD HH:mm:ss') }})
-- type: git
-  repo: git@git.coding.net:jimwoo/blog.git
-  branch: coding-pages
-  message: Site updated:{{ now('YYYY-MM-DD HH:mm:ss') }})
+# deploy:
+# - type: git
+#   repo: git@github.com:zqjimlove/zqjimlove.github.io.git
+#   branch: master
+#   message: Site updated:{{ now('YYYY-MM-DD HH:mm:ss') }})
+# - type: git
+#   repo: git@git.coding.net:jimwoo/blog.git
+#   branch: coding-pages
+#   message: Site updated:{{ now('YYYY-MM-DD HH:mm:ss') }})
 
 # Search
 search:

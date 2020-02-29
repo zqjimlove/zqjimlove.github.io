@@ -1,9 +1,8 @@
 .DS_Store
 Thumbs.db
-db.json
 *.log
 node_modules/
-public/
 .deploy*/
 source/_posts/.Ulysses-favorites.plist
 source/_posts/.Ulysses-Group.plist
+package-lock.json
