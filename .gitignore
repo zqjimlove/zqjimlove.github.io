@@ -8,3 +8,4 @@ source/_posts/.Ulysses-Group.plist
 package-lock.json
 public/*
 db.json
+_multiconfig.yml

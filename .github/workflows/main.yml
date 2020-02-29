@@ -23,6 +23,7 @@ jobs:
       - name: Setup ENV
         env:
           ACTION_DEPLOY_KEY: ${{ secrets.ACTION_DEPLOY_KEY }}
+          HEXO_ALGOLIA_INDEXING_KEY: ${{secrets.HEXO_ALGOLIA_INDEXING_KEY}}
         run: |
           mkdir -p ~/.ssh/
           echo "$ACTION_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa # 配置秘钥
@@ -37,6 +38,6 @@ jobs:
           npm i
       - name: Deploy
         run: |
-          hexo g
-          cat ./public/index.html
-          hexo deploy
+          hexo clean
+          hexo g --config _config.yml,_config.production.yml -d
+          hexo algolia

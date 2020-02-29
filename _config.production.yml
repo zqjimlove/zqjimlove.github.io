@@ -1,0 +1,21 @@
+cdn:
+  enable: false
+  base: //i.inwoo.me/
+  excludeTags:
+    - link
+    - script
+
+
+css_minifier:
+  enable: true
+
+js_minifier:
+  enable: true
+
+image_minifier:
+  enable: true
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false

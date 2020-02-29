@@ -84,12 +84,12 @@ deploy:
   branch: coding-pages
   message: Site updated:{{ now('YYYY-MM-DD HH:mm:ss') }})
 
-# Search
-search:
-  path: search.xml
-  field: post
-  format: html
-  limit: 10000
+# # Search
+# search:
+#   path: search.xml
+#   field: post
+#   format: html
+#   limit: 10000
 
 # Custom
 avatar: /uploads/avatar.jpg
@@ -103,16 +103,18 @@ cdn:
     - link
     - script
 
+
 css_minifier:
-  enable: true
+  enable: false
 
 js_minifier:
-  enable: true
+  enable: false
 
 image_minifier:
-  enable: true
-  interlaced: false
-  multipass: false
-  optimizationLevel: 2
-  pngquant: false
-  progressive: false
+  enable: false
+
+algolia:
+  applicationID: 'O53TIH124Y'
+  apiKey: '8ed06f70ea649e0bf006a20053097d7e'
+  indexName: 'blog'
+  chunkSize: 5000
