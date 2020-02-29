@@ -30,4 +30,7 @@ jobs:
           npm i -g hexo-cli
           npm i
       - name: Deploy
-        run: hexo g -d
+        run: |
+          hexo g
+          cat ./public/index.html
+          hexo deploy
