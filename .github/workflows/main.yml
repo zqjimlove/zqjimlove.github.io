@@ -22,7 +22,7 @@ jobs:
           echo "$ACTION_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa # 配置秘钥
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          ssh-keyscan git.coding.net >> ~/.ssh/known_hosts
+          ssh-keyscan e.coding.net >> ~/.ssh/known_hosts
           git config --global user.name 'github@zqjimlove'
           git config --global user.email 'zqjimlove@gmail.com'
       - name: Setup Hexo

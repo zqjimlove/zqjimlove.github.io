@@ -80,7 +80,7 @@ deploy:
   branch: master
   message: Site updated:{{ now('YYYY-MM-DD HH:mm:ss') }})
 - type: git
-  repo: git@git.coding.net:jimwoo/blog.git
+  repo: git@e.coding.net:jimwoo/blog.git
   branch: coding-pages
   message: Site updated:{{ now('YYYY-MM-DD HH:mm:ss') }})
 
