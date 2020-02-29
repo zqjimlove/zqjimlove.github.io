@@ -97,7 +97,7 @@ google_analytics: UA-39715938-1
 
 
 cdn:
-  enable: true
+  enable: false
   base: //i.inwoo.me/
   excludeTags:
     - link
