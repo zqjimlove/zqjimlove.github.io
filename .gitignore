@@ -6,3 +6,4 @@ node_modules/
 source/_posts/.Ulysses-favorites.plist
 source/_posts/.Ulysses-Group.plist
 package-lock.json
+public/*
