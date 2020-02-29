@@ -104,13 +104,13 @@ cdn:
     - script
 
 css_minifier:
-  enable: false
+  enable: true
 
 js_minifier:
-  enable: false
+  enable: true
 
 image_minifier:
-  enable: false
+  enable: true
   interlaced: false
   multipass: false
   optimizationLevel: 2
